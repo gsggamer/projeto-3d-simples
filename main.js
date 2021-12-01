@@ -21,3 +21,13 @@ function animate() {
 }
 
 animate();
+
+
+
+window.onmousemove = (e) => {
+    let x = e.clientX;
+    let y = e.clientY;
+    
+    cube.rotation.x = y * 0.005;
+    cube.rotation.y = x * 0.005;
+}
